@@ -17,7 +17,7 @@ public class EmailTopicListener {
     @KafkaListener(topics = "CREDIT_TRANSACTION", groupId = "TRANSACTION")
     public void consume(@Payload String email, @Header(KafkaHeaders.MESSAGE_KEY) Object messageKey) {
         LOG.info("Received data='{}'", email);
-        System.out.println("Account created notification sent via email");
+        System.out.println("Transaction Successful notification sent via email");
         System.out.println("Message received " + email + "  " + messageKey.toString());
 
 

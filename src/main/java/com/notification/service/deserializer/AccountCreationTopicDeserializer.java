@@ -1,7 +1,7 @@
 package com.notification.service.deserializer;
 
 import com.google.gson.Gson;
-import com.notification.service.listener.smslistenere.Account;
+import com.notification.service.domain.Account;
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Deserializer;
 
